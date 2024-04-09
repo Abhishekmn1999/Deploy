@@ -24,7 +24,6 @@
   <header class="header">
     <a href="#" class="logo">Portfolio</a>
 
-
     <i class="bx bx-menu" id="menu-icon"></i>
 
     <nav class="navbar">
@@ -52,7 +51,7 @@
         <a href="#"><i class="bx bxl-instagram-alt"></i></a>
         <a href="#"><i class="bx bxl-linkedin"></i></a>
       </div>
-      <a href="https://drive.google.com/file/d/1x54ZN6p14OcKqRTvUm3_bltAV5GpfLWA/view?usp=sharing" target="_blank"
+      <a href="https://drive.google.com/file/d/1CWU2Ls6xWvSexN7JlLI1-Wez98bib-kb/view?usp=sharing" target="_blank"
         class="btn">Download CV</a>
     </div>
 
@@ -213,19 +212,21 @@
   <!-- contact section design -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="send_email.php" method="POST">
-      <!-- <form action="#"> -->
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="5432830e-6657-48a9-8378-85b9199e0e29">
       <div class="input-box">
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
+        <input type="text" name="full_name" placeholder="Full Name">
+        <input type="email" name="email" placeholder="Email Address">
       </div>
       <div class="input-box">
-        <input type="number" placeholder="Mobile Number">
-        <input type="text" placeholder="Email Subject">
+        <input type="number" name="mobile_number" placeholder="Mobile Number">
+        <input type="text" name="email_subject" placeholder="Email Subject">
       </div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="YourMessage"></textarea>
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <!-- <input type="hidden" name="redirect" value="https://web3forms.com/success"> -->
       <input type="submit" value="Send Message" class="btn">
     </form>
+    
   </section>
 
   <!-- footer design -->
